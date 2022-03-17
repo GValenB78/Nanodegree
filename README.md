@@ -1,2 +1,2 @@
 # Nanodegree
-Repository of Udacity Nanodegrees' projects
+Repository of my Udacity Nanodegrees' projects
