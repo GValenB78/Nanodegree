@@ -8,7 +8,7 @@ Repository containing my Udacity's [Predictive Analytics for Business Nanodegree
 
 The Problem Solving with Analytics course provides students with the foundational knowledge to use data analytics to create business insights.
 
-You will learn:
+#### You will learn:
 
 - To apply a useful framework to solve a business problem
 - To determine which analytical method to apply given the nature of the problem and available data
@@ -16,8 +16,8 @@ You will learn:
 
 Throughout this course you’ll also learn the techniques to apply your knowledge in a data analytics program called Alteryx. At the end of the course, you’ll complete a project based on the principles in the course.
 
-- [Data: Diamond Prices]()
-- [Project: Diamond Prices (Report)]()
+- [Data: Diamond Prices](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/tree/main/1%20-%20Problem%20Solving%20With%20Analytics/Data)
+- [Project: Diamond Prices (Report)](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/1%20-%20Problem%20Solving%20With%20Analytics/ProjectDiamondPrices_ValenciaBecerrraG.pdf)
 
 
 ### Part 2: [Creating an Analytical Dataset by Alteryx](https://www.udacity.com/course/creating-an-analytical-dataset--ud977)
@@ -38,6 +38,20 @@ Here are the criterias given to you in choosing the right city:
 
 Understand the most common data types. Understand the various sources of data. Make adjustments to dirty data to prepare a dataset. Identify and adjust for outliers. Learn to write queries to extract and analyze data from a relational database.
 
-- [Data: ]()
-- [Project: ]()
+- [Data: Data Cleanup](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/tree/main/2%20-%20Data%20Wrangling/Data)
+- [Project: Data Cleanup (Report) ](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/2%20-%20Data%20Wrangling/ProjectDataCleanup_ValenciaBecerrraG.pdf)
+
+
+### Part 3: [Classification Models by Alteryx](https://www.udacity.com/course/classification-models--ud978)
+
+You are a loan officer at a young and small bank (been in operations for two years) that needs to come up with an efficient solution to classify new customers on whether they can be approved for a loan or not. You'll use a series of classification models to figure out the best model and provide a list of creditworthy customers to your manager.
+
+#### Skills Required
+In order to complete this project, you must be able to:
+
+Cleanup, format, and blend a wide range of data sources
+Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model
+
+- [Data: Predicting Default Risk]()
+- [Project: Predicting Default Risk (Report)]()
 
