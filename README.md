@@ -68,7 +68,7 @@ In order to complete this project, you must be able to:
 - [Data: A/B Test a New Menu Launch](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/tree/main/4%20-%20AB%20Testing/Data)
 - [Project: A/B Test a New Menu Launch (Report)](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/4%20-%20AB%20Testing/ProjectAnalyzingAMarketTest_ValenciaBecerrraG.pdf)
 
-### Part 5: Combining Predictive Techniques
+### Part 5: [Combining Predictive Techniques](https://www.udacity.com/course/predictive-analytics-for-business-nanodegree--nd008t)
 
 The capstone project has three main tasks, each of which requires you to use skills you developed during the Nanodegree program:
 
@@ -83,5 +83,8 @@ The grocery store chain has 10 new stores opening up at the beginning of the yea
 #### Task 3: Forecasting
 
 Fresh produce has a short life span, and due to increasing costs, the company wants to have an accurate monthly sales forecast. You’ve been asked to prepare a monthly forecast for produce sales for the full year of 2016 for both existing and new stores.
+
+- [Data: Predictive Analytics Capstone](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/tree/main/5%20-%20Combining%20Predictive%20Techniques/Data)
+- [Project: Predictive Analytics Capstone (Report) ](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/5%20-%20Combining%20Predictive%20Techniques/ProjectPredictiveAnalyticsCapstone_ValenciaBecerrraG.pdf)
 
 ![Predictive Analytics for Business Nanodegree Certificate](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/images/Certificate_page-0001.jpg?raw=true)
