@@ -1,0 +1,1824 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File OutputFileName="" FileFormat="19" SearchSubDirs="False" RecordLimit="">C:\Users\gvale\Downloads\PawdacityClean.yxdb</File>
+          <FormatSpecificOptions />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>PawdacityClean.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="CITY" size="12" source="Summarize: GroupBy - CITY" type="String" />
+            <Field name="Total Pawdacity Sales" source="Summarize: GroupBy - Total Pawdacity Sales" type="Int32" />
+            <Field description="TextToColumns: Parsed from 2010 Census Population" name="2010 Census Population" source="Summarize: GroupBy - 2010 Census Population" type="Int32" />
+            <Field name="Land Area" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Households with Under 18" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Int16" />
+            <Field name="Population Density" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Total Families" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="276" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_50eeb0a2b89d452ebcf53aaaceac4f73_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings>
+        <Position x="252" y="402" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="do target">True</Value>
+          <Value name="target">Total Pawdacity Sales</Value>
+          <Value name="target level">True</Value>
+          <Value name="use fields">"Total Pawdacity Sales","2010 Census Population","Land Area","Households with Under 18","Population Density","Total Families"</Value>
+          <Value name="Pearson">True</Value>
+          <Value name="Spearman">False</Value>
+          <Value name="Hoeffding">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="438" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_f0401128aa9b49a78983ea408d74d838_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="7">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_309ec0ffb7804504ae33de20cd4b6a07_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="504" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_8b8762eadb9b4888baf25c9624dbbf82_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="168" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>=</Operator>
+            <Field>CITY</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-19 17:59:40</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>Gillette</Operand>
+              <StartDate>2021-09-19 17:59:40</StartDate>
+              <EndDate>2021-09-19 17:59:40</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[CITY] = "Gillette"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="Linear_Regression">
+        <Position x="420" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="standardize_pred">True</Value>
+          <Value name="internal_cv">True</Value>
+          <Value name="display_graphs">True</Value>
+          <Value name="set_seed_internal_cv">True</Value>
+          <Value name="set_seed_external_cv">True</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Linear_Regression</Value>
+          <Value name="Y Var">Total Pawdacity Sales</Value>
+          <Value name="X Vars">2010 Census Population,Land Area,Households with Under 18,Population Density,Total Families</Value>
+          <Value name="Omit Constant">False</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Linear_Regression</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="504" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_56c0bf0265834c1f99654cfe34b2a4c0_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="Linear_Regression">
+        <Position x="420" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="standardize_pred">True</Value>
+          <Value name="internal_cv">True</Value>
+          <Value name="display_graphs">True</Value>
+          <Value name="set_seed_internal_cv">True</Value>
+          <Value name="set_seed_external_cv">True</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Linear_Regression_2</Value>
+          <Value name="Y Var">Total Pawdacity Sales</Value>
+          <Value name="X Vars">2010 Census Population,Households with Under 18,Population Density,Total Families</Value>
+          <Value name="Omit Constant">False</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Linear_Regression_2</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="504" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_af7a27fc07f64f2c92b4d5de4ceff577_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings>
+        <Position x="252" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">2010 Census Population</Value>
+          <Value name="y var">Total Pawdacity Sales</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">False</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">CITY</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="16">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="138" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_396969a3b4884f2d877d52226673c45a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="17">
+      <GuiSettings>
+        <Position x="252" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Land Area</Value>
+          <Value name="y var">Total Pawdacity Sales</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">False</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">CITY</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_62076a63ae5148bd9fe7793ce3d7e18c_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings>
+        <Position x="252" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Households with Under 18</Value>
+          <Value name="y var">Total Pawdacity Sales</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">False</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">CITY</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_09123cf2ea8349128511fd62c720cf41_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings>
+        <Position x="252" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Population Density</Value>
+          <Value name="y var">Total Pawdacity Sales</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">False</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">CITY</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="282" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_b56d6292451a40e790af08f48abaff84_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings>
+        <Position x="252" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="x var">Total Families</Value>
+          <Value name="y var">Total Pawdacity Sales</Value>
+          <Value name="y binary">False</Value>
+          <Value name="y level" />
+          <Value name="reg line">True</Value>
+          <Value name="smooth line">False</Value>
+          <Value name="smooth span">50</Value>
+          <Value name="spread">True</Value>
+          <Value name="boxplots">True</Value>
+          <Value name="jitter x">False</Value>
+          <Value name="jitter y">False</Value>
+          <Value name="log x">False</Value>
+          <Value name="log y">False</Value>
+          <Value name="groups">False</Value>
+          <Value name="group var">CITY</Value>
+          <Value name="group lines">False</Value>
+          <Value name="default">True</Value>
+          <Value name="topleft">False</Value>
+          <Value name="topright">False</Value>
+          <Value name="bottomleft">False</Value>
+          <Value name="bottomright">False</Value>
+          <Value name="x label" />
+          <Value name="y label" />
+          <Value name="pointsize">10</Value>
+          <Value name="point size">1.0</Value>
+          <Value name="axis text size">1.2</Value>
+          <Value name="axis label size">1.3</Value>
+          <Value name="title size">1.4</Value>
+          <Value name="inches">True</Value>
+          <Value name="in.w">5.50</Value>
+          <Value name="in.h">5.50</Value>
+          <Value name="centimeters">False</Value>
+          <Value name="cm.w">13.00</Value>
+          <Value name="cm.h">14.95</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Scatterplot.yxmc" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="336" y="330" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_cec989f4b86f40d99cb274e1a5df6f6f_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="564" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>p2-wy-demographic-data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="County" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="Land Area" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="Households with Under 18" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="Population Density" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="Total Families" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="Linear_Regression">
+        <Position x="420" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="curPage">Home</Value>
+          <Value name="curTab">advanced</Value>
+          <Value name="standardize_pred">True</Value>
+          <Value name="internal_cv">True</Value>
+          <Value name="display_graphs">True</Value>
+          <Value name="set_seed_internal_cv">True</Value>
+          <Value name="set_seed_external_cv">True</Value>
+          <Value name="lambda_1se">True</Value>
+          <Value name="lambda_min">False</Value>
+          <Value name="Model Name">Linear_Regression_3</Value>
+          <Value name="Y Var">Total Pawdacity Sales</Value>
+          <Value name="X Vars">Land Area,Population Density</Value>
+          <Value name="Omit Constant">False</Value>
+          <Value name="Use Weights">False</Value>
+          <Value name="Weight Vec" />
+          <Value name="regularization">False</Value>
+          <Value name="alpha">0.5</Value>
+          <Value name="nfolds">5</Value>
+          <Value name="lambda">lambda_1se</Value>
+          <Value name="seed_internal_cv">1</Value>
+          <Value name="lambda_no_cv">0.5</Value>
+          <Value name="external_cv">False</Value>
+          <Value name="nfolds_external">5</Value>
+          <Value name="numberTrials">3</Value>
+          <Value name="external_seed_value">1</Value>
+          <Value name="graph.resolution">1x</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Linear_Regression_3</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" EngineDll="Macro" EngineDllEntryPoint="Linear_Regression/Supporting_Macros/Linear_Regression.yxmc" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="Score">
+        <Position x="804" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="modelChoice">Local Model</Value>
+          <Value name="score field">Predicted Yearly Sales</Value>
+          <Value name="is oversampled">False</Value>
+          <Value name="oversampled value">
+          </Value>
+          <Value name="original percent">2</Value>
+          <Value name="log y">False</Value>
+          <Value name="prediction.interval">False</Value>
+          <Value name="interval.level">95</Value>
+          <Value name="append.xdf">False</Value>
+          <Value name="num.records">256000</Value>
+          <Value name="credentials">
+          </Value>
+          <Value name="models">
+          </Value>
+          <Value name="page">
+          </Value>
+          <Value name="errorStatus">
+          </Value>
+          <Value name="modelDetailJSON">
+          </Value>
+          <Value name="modelDetails">{"Name":"","Owner":"","Status":"","Id":"","LastDeployment":"","LastUpdated":"","LatestVersion":"","ActiveVersion":"","NumReplications":"","NumVersions":""}</Value>
+          <Value name="promoteURL">
+          </Value>
+          <Value name="username">
+          </Value>
+          <Value name="model_name">
+          </Value>
+          <Value name="model_owner">
+          </Value>
+          <Value name="apiKey">
+          </Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Score\Supporting_Macros\score-engine.yxmc" EngineDll="Macro" EngineDllEntryPoint="Score\Supporting_Macros\score-engine.yxmc" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="642" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="City" selected="True" />
+            <Field field="County" selected="True" />
+            <Field field="Land Area" selected="True" />
+            <Field field="Households with Under 18" selected="True" />
+            <Field field="Population Density" selected="True" />
+            <Field field="Total Families" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City" size="17" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="V_String" />
+            <Field name="County" size="11" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="String" />
+            <Field name="Land Area" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Households with Under 18" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Int16" />
+            <Field name="Population Density" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+            <Field name="Total Families" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-demographic-data.csv" type="Double" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="720" y="78" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Land Area" selected="True" />
+            <SelectField field="Population Density" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="876" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="Land Area" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="Land.Area" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_County" selected="False" input="Left_" />
+                <SelectField field="Left_Land Area" selected="False" input="Left_" />
+                <SelectField field="Left_Households with Under 18" selected="False" input="Left_" />
+                <SelectField field="Left_Population Density" selected="False" input="Left_" />
+                <SelectField field="Left_Total Families" selected="False" input="Left_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="954" y="66" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_99abd9d7e7994b5380d0fe1290b8a995_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="35">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1374" y="150" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_843c524c2d274c44abf1468f4607579f_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="36">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="642" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-partially-parsed-wy-web-scrape.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>p2-partially-parsed-wy-web-scrape.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="City|County" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-partially-parsed-wy-web-scrape.csv" type="V_String" />
+            <Field name="2014 Estimate" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-partially-parsed-wy-web-scrape.csv" type="V_String" />
+            <Field name="2010 Census" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-partially-parsed-wy-web-scrape.csv" type="V_String" />
+            <Field name="2000 Census" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-partially-parsed-wy-web-scrape.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.TextToColumns.TextToColumns">
+        <Position x="834" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Field>City|County</Field>
+          <ErrorHandling>Last</ErrorHandling>
+          <RootName>
+          </RootName>
+          <Delimeters value="|" />
+          <NumFields value="2" />
+          <Flags value="0" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxTextToColumns" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="918" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="True" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="City|County" selected="False" />
+            <SelectField field="2010 Census" selected="False" />
+            <SelectField field="2000 Census" selected="False" />
+            <SelectField field="1" selected="True" rename="City" />
+            <SelectField field="2" selected="False" rename="County" />
+            <SelectField field="2014 Estimate" selected="True" />
+            <SelectField field="*Unknown" selected="False" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="40">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="1110" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="ReplaceFirst([2014 Estimate],&quot;&lt;td&gt;&quot;,&quot;&quot;)" field="2014 Estimate" size="254" type="V_String" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[2014 Estimate = ReplaceFirst([2014 Estimate],"<td>","")
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="41">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="750" y="198" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>IsNotNull</Operator>
+            <Field>City|County</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-19 23:36:23</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2021-09-19 23:36:23</StartDate>
+              <EndDate>2021-09-19 23:36:23</EndDate>
+              <Operand>
+              </Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>!IsNull([City|County])</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="42">
+      <GuiSettings>
+        <Position x="1014" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"City"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">True</Value>
+          <Value name="Check Box (122)">False</Value>
+          <Value name="Check Box (53)">False</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="43">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="1302" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="City" selected="True" />
+            <Field field="2014 Estimate" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field description="TextToColumns: Parsed from City|County" name="City" size="17" source="Formula: [_CurrentField_]" type="V_String" />
+            <Field name="2014 Estimate" source="Formula: [_CurrentField_]" type="Int32" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="44">
+      <GuiSettings>
+        <Position x="1206" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="Check Box (135)">False</Value>
+          <Value name="Check Box (136)">False</Value>
+          <Value name="List Box (11)">"2014 Estimate"</Value>
+          <Value name="Check Box (84)">True</Value>
+          <Value name="Check Box (117)">True</Value>
+          <Value name="Check Box (15)">True</Value>
+          <Value name="Check Box (109)">False</Value>
+          <Value name="Check Box (122)">True</Value>
+          <Value name="Check Box (53)">True</Value>
+          <Value name="Check Box (58)">False</Value>
+          <Value name="Check Box (70)">True</Value>
+          <Value name="Check Box (77)">False</Value>
+          <Value name="Drop Down (81)">upper</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings Macro="Cleanse.yxmc" />
+    </Node>
+    <Node ToolID="45">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1398" y="186" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;=</Operator>
+            <Field>2014 Estimate</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-20 12:58:55</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2021-09-20 12:58:55</StartDate>
+              <EndDate>2021-09-20 12:58:55</EndDate>
+              <Operand>4000</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[2014 Estimate] &gt;= 4000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="46">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1482" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_f0c66969d7d2490b9434ccb66f999849_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="47">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="642" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>p2-wy-453910-naics-data.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BUSINESS NAME" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="V_String" />
+            <Field name="PHYSICAL CITY NAME" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="V_String" />
+            <Field name="SALES VOLUME" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="V_String" />
+            <Field name="CASS_LastLine" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="48">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="726" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="BUSINESS NAME" selected="True" />
+            <Field field="PHYSICAL CITY NAME" selected="True" />
+            <Field field="SALES VOLUME" selected="True" />
+            <Field field="CASS_LastLine" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="BUSINESS NAME" size="29" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="V_String" />
+            <Field name="PHYSICAL CITY NAME" size="12" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="String" />
+            <Field name="SALES VOLUME" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="Int32" />
+            <Field name="CASS_LastLine" size="27" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 3 - Data Wrangling\Proyecto\p2-wy-453910-naics-data.csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="50">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="810" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="PHYSICAL CITY NAME" action="GroupBy" rename="PHYSICAL CITY NAME" />
+            <SummarizeField field="SALES VOLUME" action="Sum" rename="Total Competition Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="51">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="894" y="270" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_551a9a26806040b0813060d1c75845dc_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="52">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="894" y="318" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&lt;</Operator>
+            <Field>Total Competition Sales</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-20 13:35:00</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <StartDate>2021-09-20 13:35:00</StartDate>
+              <EndDate>2021-09-20 13:35:00</EndDate>
+              <Operand>500000</Operand>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Total Competition Sales] &lt; 500000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="53">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="978" y="258" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_e73b5210c8a24100911f4615dd97f800_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="54">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.JoinMultiple.JoinMultiple">
+        <Position x="1566" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <JoinByRecPos value="False" />
+          <JoinFields>
+            <JoinInfo connection="#1">
+              <Field field="City" />
+            </JoinInfo>
+            <JoinInfo connection="#2">
+              <Field field="City" />
+            </JoinInfo>
+            <JoinInfo connection="#3">
+              <Field field="PHYSICAL CITY NAME" />
+            </JoinInfo>
+          </JoinFields>
+          <CartesianMode>Error</CartesianMode>
+          <OutputJoinOnly value="True" />
+          <SelectConfiguration>
+            <Configuration outputConnection="Output">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Input_#1_City" selected="True" />
+                <SelectField field="Input_#1_Land.Area" selected="True" />
+                <SelectField field="Input_#1_Population.Density" selected="True" />
+                <SelectField field="Input_#2_City" selected="False" rename="Input_#2_City" />
+                <SelectField field="Input_#2_2014 Estimate" selected="True" />
+                <SelectField field="Input_#3_PHYSICAL CITY NAME" selected="False" />
+                <SelectField field="Input_#3_Sum_SALES VOLUME" selected="False" />
+                <SelectField field="Input_#1_Score" selected="False" />
+                <SelectField field="Input_#3_Total Competition Sales" selected="True" />
+                <SelectField field="Input_#1_Predicted_Yearly_Sales" selected="True" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoinMultiple" />
+    </Node>
+    <Node ToolID="55">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1650" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_2e05ea81ca0e4660845875fca9b3d959_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="56">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="1650" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Mode>Simple</Mode>
+          <Simple>
+            <Operator>&gt;</Operator>
+            <Field>Predicted_Yearly_Sales</Field>
+            <Operands>
+              <IgnoreTimeInDateTime>True</IgnoreTimeInDateTime>
+              <DateType>fixed</DateType>
+              <PeriodDate>2021-09-20 13:39:52</PeriodDate>
+              <PeriodType>
+              </PeriodType>
+              <PeriodCount>0</PeriodCount>
+              <Operand>200000</Operand>
+              <StartDate>2021-09-20 13:39:52</StartDate>
+              <EndDate>2021-09-20 13:39:52</EndDate>
+            </Operands>
+          </Simple>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Predicted_Yearly_Sales] &gt; 200000</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="57">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1806" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_31728_017eda1a76634eefb6eecd19e68e4cb9_\Engine_32008_e01641c53fed4e44adf5f890158c05d4_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="58">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Sort.Sort">
+        <Position x="1734" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SortInfo locale="0">
+            <Field field="Predicted_Yearly_Sales" order="Descending" />
+          </SortInfo>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Predicted_Yearly_Sales - Descending</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSort" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Correlation Matrix" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="Output" />
+      <Destination ToolID="7" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="True" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="15" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="17" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="19" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="21" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="23" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="4" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="False" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="11" Connection="Reports" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="13" Connection="Reports" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="15" Connection="Scater Output" />
+      <Destination ToolID="16" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="17" Connection="Scater Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Scater Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Scater Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Scater Output" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="25" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Reports" />
+      <Destination ToolID="9" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="27" Connection="Data" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="31" Connection="Output" />
+      <Destination ToolID="27" Connection="Model" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="32" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="32" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="30" Connection="Output" />
+      <Destination ToolID="31" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="32" Connection="Join" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection name="#3">
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="54" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="36" Connection="Output" />
+      <Destination ToolID="41" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Output" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="39" Connection="Output" />
+      <Destination ToolID="42" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="40" Connection="Output" />
+      <Destination ToolID="44" Connection="Input2" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="41" Connection="True" />
+      <Destination ToolID="37" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="42" Connection="Output26" />
+      <Destination ToolID="40" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="35" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="43" Connection="Output" />
+      <Destination ToolID="45" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="44" Connection="Output26" />
+      <Destination ToolID="43" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="45" Connection="True" />
+      <Destination ToolID="46" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="47" Connection="Output" />
+      <Destination ToolID="48" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="48" Connection="Output" />
+      <Destination ToolID="50" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="51" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="50" Connection="Output" />
+      <Destination ToolID="52" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="52" Connection="True" />
+      <Destination ToolID="53" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="55" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="54" Connection="Output" />
+      <Destination ToolID="56" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="56" Connection="True" />
+      <Destination ToolID="58" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="58" Connection="Output" />
+      <Destination ToolID="57" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>Proyecto2_2Workflow</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>
