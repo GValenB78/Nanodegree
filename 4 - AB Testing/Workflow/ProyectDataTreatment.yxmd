@@ -1,0 +1,1232 @@
+<?xml version="1.0"?>
+<AlteryxDocument yxmdVer="2020.4">
+  <Nodes>
+    <Node ToolID="1">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="54" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>RoundRoastersTransactions.csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Invoice Number" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Invoice Date" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="SKU" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Category" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Product" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="QTY" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Size" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Gross Margin" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+            <Field name="Sales" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\RoundRoastersTransactions.csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="2">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="138" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_93b70e7dd18a4879bb16eb45da78d9dc_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="3">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="138" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="StoreID" selected="True" type="Int16" size="2" />
+            <SelectField field="Invoice Number" selected="True" type="Int64" size="8" />
+            <SelectField field="SKU" selected="False" type="Int32" size="4" />
+            <SelectField field="QTY" selected="True" type="Int16" size="2" />
+            <SelectField field="Gross Margin" selected="True" type="Double" size="8" />
+            <SelectField field="Sales" selected="True" type="Double" size="8" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="4">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Filter.Filter">
+        <Position x="222" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Expression>[Invoice Date]&gt;="2015-02-06" AND [Invoice Date]&lt;"2016-07-22"</Expression>
+          <Mode>Custom</Mode>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>[Invoice Date]&gt;="2015-02-06" AND [Invoice Date]&lt;"2016-07-22"</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFilter" />
+    </Node>
+    <Node ToolID="5">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="306" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="FLOOR(DateTimeDiff([Invoice Date], &quot;2016-04-29&quot;, 'days') / 7+1)" field="Week Number" size="8" type="Int64" />
+            <FormulaField expression="DateTimeAdd(&quot;2016-04-29&quot;,7*([Week Number]-1),'days')" field="Week Begin Date" size="10" type="Date" />
+            <FormulaField expression="DateTimeAdd([Week Begin Date],6,'days')" field="Week End Date" size="10" type="Date" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Week Number = FLOOR(DateTimeDiff([Invoice Date], "2016-04-29", 'days') / 7+1)
+We...</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="6">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="390" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="Week Number" action="CountDistinct" rename="CountDistinct_Week Number" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="8">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="390" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_d666a26307a145e8a17c9915db0472ee_.yxdb</TempFile>
+          <Layout>
+            <View1>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="9">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="486" y="114" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_CountDistinct_Week Number" selected="False" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="10">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="582" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="Invoice Number" action="GroupBy" rename="Invoice Number" />
+            <SummarizeField field="Invoice Date" action="GroupBy" rename="Invoice Date" />
+            <SummarizeField field="Category" action="GroupBy" rename="Category" />
+            <SummarizeField field="Product" action="GroupBy" rename="Product" />
+            <SummarizeField field="QTY" action="GroupBy" rename="QTY" />
+            <SummarizeField field="Size" action="GroupBy" rename="Size" />
+            <SummarizeField field="Week Number" action="GroupBy" rename="Week Number" />
+            <SummarizeField field="Week Begin Date" action="GroupBy" rename="Week Begin Date" />
+            <SummarizeField field="Week End Date" action="GroupBy" rename="Week End Date" />
+            <SummarizeField field="Gross Margin" action="Sum" rename="Sum_Gross Margin" />
+            <SummarizeField field="Sales" action="Sum" rename="Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="11">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="666" y="54" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_475153dc745b4ac3bf4ce1ed1abacd81_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="12">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="666" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="Week Number" action="GroupBy" rename="Week Number" />
+            <SummarizeField field="Week Begin Date" action="GroupBy" rename="Week Begin Date" />
+            <SummarizeField field="Week End Date" action="GroupBy" rename="Week End Date" />
+            <SummarizeField field="Invoice Number" action="CountDistinct" rename="CountDistinct_Invoice Number" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="13">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="750" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\Weekly_store_traffic.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Weekly_store_traffic.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="14">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="906" y="222" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+            <SummarizeField field="Week Number" action="GroupBy" rename="Week Number" />
+            <SummarizeField field="Week Begin Date" action="GroupBy" rename="Week Begin Date" />
+            <SummarizeField field="Week End Date" action="GroupBy" rename="Week End Date" />
+            <SummarizeField field="Sum_Gross Margin" action="Sum" rename="Sum_Sum_Gross Margin" />
+            <SummarizeField field="Sum_Sales" action="Sum" rename="Sum_Sum_Sales" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="15">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1002" y="102" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_dc174596e7cb49d488d4ad6d77c8468a_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="18">
+      <GuiSettings Plugin="AlteryxSpatialPluginsGui.Summarize.Summarize">
+        <Position x="678" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <SummarizeFields>
+            <SummarizeField field="StoreID" action="GroupBy" rename="StoreID" />
+          </SummarizeFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxSpatialPluginsEngine.dll" EngineDllEntryPoint="AlteryxSummarize" />
+    </Node>
+    <Node ToolID="19">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="462" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>treatment-stores (1).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Sq_Ft" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="AvgMonthSales" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Phone Number" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street Combined" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street 1" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street 2" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street 3" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Region" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Country" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Coordinates" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Timezone" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Current Timezone Offset" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Olson Timezone" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Name" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Right_State" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="20">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="546" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="StoreID" selected="True" />
+            <Field field="Sq_Ft" selected="True" />
+            <Field field="AvgMonthSales" selected="True" />
+            <Field field="Phone Number" selected="True" />
+            <Field field="Street Combined" selected="True" />
+            <Field field="Street 1" selected="True" />
+            <Field field="Street 2" selected="True" />
+            <Field field="Street 3" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="Postal Code" selected="True" />
+            <Field field="Region" selected="True" />
+            <Field field="Country" selected="True" />
+            <Field field="Coordinates" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Timezone" selected="True" />
+            <Field field="Current Timezone Offset" selected="True" />
+            <Field field="Olson Timezone" selected="True" />
+            <Field field="Name" selected="True" />
+            <Field field="Right_State" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Int16" />
+            <Field name="Sq_Ft" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Int16" />
+            <Field name="AvgMonthSales" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Int16" />
+            <Field name="Phone Number" size="14" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Street Combined" size="42" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street 1" size="26" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Street 2" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Byte" />
+            <Field name="Street 3" size="25" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="City" size="16" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Postal Code" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Int32" />
+            <Field name="Region" size="7" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Country" size="2" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Coordinates" size="37" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Latitude" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Double" />
+            <Field name="Longitude" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Double" />
+            <Field name="Timezone" size="22" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Current Timezone Offset" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="Int16" />
+            <Field name="Olson Timezone" size="25" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+            <Field name="Name" size="28" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="V_String" />
+            <Field name="Right_State" size="2" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\treatment-stores (1).csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="21">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="822" y="306" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="*Unknown" selected="True" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="22">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="726" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Treatment&quot;" field="Test Group" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Test Group = "Treatment"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="23">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Formula.Formula">
+        <Position x="906" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <FormulaFields>
+            <FormulaField expression="&quot;Control&quot;" field="Test Group" size="1073741823" type="V_WString" />
+          </FormulaFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText><![CDATA[Test Group = "Control"
+]]></DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxFormula" />
+    </Node>
+    <Node ToolID="24">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Union.Union">
+        <Position x="1206" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <ByName_ErrorMode>Warning</ByName_ErrorMode>
+          <ByName_OutputMode>All</ByName_OutputMode>
+          <Mode>ByName</Mode>
+          <SetOutputOrder value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxUnion" />
+    </Node>
+    <Node ToolID="25">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1290" y="246" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_c4a1b75e80b549d7bf5d75d8cf8fe797_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="26">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="630" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="Phone Number" selected="False" />
+            <SelectField field="Street Combined" selected="False" />
+            <SelectField field="Street 1" selected="False" />
+            <SelectField field="Street 2" selected="False" />
+            <SelectField field="Street 3" selected="False" />
+            <SelectField field="City" selected="False" />
+            <SelectField field="Postal Code" selected="False" />
+            <SelectField field="Country" selected="False" />
+            <SelectField field="Coordinates" selected="False" />
+            <SelectField field="Latitude" selected="False" />
+            <SelectField field="Longitude" selected="False" />
+            <SelectField field="Timezone" selected="False" />
+            <SelectField field="Current Timezone Offset" selected="False" />
+            <SelectField field="Olson Timezone" selected="False" />
+            <SelectField field="Name" selected="False" />
+            <SelectField field="Right_State" selected="False" />
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="27">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileInput.DbFileInput">
+        <Position x="858" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Passwords />
+          <File RecordLimit="" SearchSubDirs="False" FileFormat="0" OutputFileName="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv</File>
+          <FormatSpecificOptions>
+            <HeaderRow>True</HeaderRow>
+            <IgnoreErrors>False</IgnoreErrors>
+            <AllowShareWrite>False</AllowShareWrite>
+            <ImportLine>1</ImportLine>
+            <FieldLen>254</FieldLen>
+            <SingleThreadRead>False</SingleThreadRead>
+            <IgnoreQuotes>DoubleQuotes</IgnoreQuotes>
+            <Delimeter>,</Delimeter>
+            <QuoteRecordBreak>False</QuoteRecordBreak>
+            <CodePage>28591</CodePage>
+          </FormatSpecificOptions>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>round-roaster-stores (1).csv</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Sq_Ft" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="AvgMonthSales" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Right_Name" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Phone Number" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street Combined" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 1" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 2" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 3" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="City" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="State" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Postal Code" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Region" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Country" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Coordinates" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Latitude" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Longitude" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Timezone" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Current Timezone Offset" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Olson Timezone" size="254" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileInput" />
+    </Node>
+    <Node ToolID="28">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AutoField.AutoField">
+        <Position x="930" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Fields>
+            <Field field="StoreID" selected="True" />
+            <Field field="Sq_Ft" selected="True" />
+            <Field field="AvgMonthSales" selected="True" />
+            <Field field="Right_Name" selected="True" />
+            <Field field="Phone Number" selected="True" />
+            <Field field="Street Combined" selected="True" />
+            <Field field="Street 1" selected="True" />
+            <Field field="Street 2" selected="True" />
+            <Field field="Street 3" selected="True" />
+            <Field field="City" selected="True" />
+            <Field field="State" selected="True" />
+            <Field field="Postal Code" selected="True" />
+            <Field field="Region" selected="True" />
+            <Field field="Country" selected="True" />
+            <Field field="Coordinates" selected="True" />
+            <Field field="Latitude" selected="True" />
+            <Field field="Longitude" selected="True" />
+            <Field field="Timezone" selected="True" />
+            <Field field="Current Timezone Offset" selected="True" />
+            <Field field="Olson Timezone" selected="True" />
+            <Field field="*Unknown" selected="True" />
+          </Fields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <MetaInfo connection="Output">
+          <RecordInfo>
+            <Field name="StoreID" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Int16" />
+            <Field name="Sq_Ft" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Int16" />
+            <Field name="AvgMonthSales" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Int32" />
+            <Field name="Right_Name" size="35" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Phone Number" size="14" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Street Combined" size="68" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 1" size="33" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 2" size="16" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="Street 3" size="31" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="City" size="17" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="V_String" />
+            <Field name="State" size="2" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Postal Code" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Int32" />
+            <Field name="Region" size="7" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Country" size="2" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Coordinates" size="37" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Latitude" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Double" />
+            <Field name="Longitude" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Double" />
+            <Field name="Timezone" size="25" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+            <Field name="Current Timezone Offset" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="Int16" />
+            <Field name="Olson Timezone" size="29" source="File: D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\round-roaster-stores (1).csv" type="String" />
+          </RecordInfo>
+        </MetaInfo>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxAutoField" />
+    </Node>
+    <Node ToolID="29">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.AlteryxSelect.AlteryxSelect">
+        <Position x="1014" y="390" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <OrderChanged value="False" />
+          <CommaDecimal value="False" />
+          <SelectFields>
+            <SelectField field="*Unknown" selected="True" />
+          </SelectFields>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxSelect" />
+    </Node>
+    <Node ToolID="30">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1098" y="450" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_3025728450414e499461ce4ed5e55617_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Profile</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+    <Node ToolID="31">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1098" y="378" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Left_Test Group" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Sq_Ft" selected="True" input="Right_" />
+                <SelectField field="Right_AvgMonthSales" selected="True" input="Right_" />
+                <SelectField field="Right_Region" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="32">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1290" y="294" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\Store_List.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Store_List.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="33">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.DbFileOutput.DbFileOutput">
+        <Position x="1086" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <File FileFormat="19" MaxRecords="">D:\gvale\Documentos\Cursos\Udacity\Nanodegree\Modulo 5 - AB Testing\Proyecto\Store_sales_analysis_data.yxdb</File>
+          <Passwords />
+          <FormatSpecificOptions>
+            <NoSpatialIndex>False</NoSpatialIndex>
+            <SaveSource>True</SaveSource>
+            <WriteCompatibleVersion>False</WriteCompatibleVersion>
+          </FormatSpecificOptions>
+          <MultiFile value="False" />
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText>Store_sales_analysis_data.yxdb</DefaultAnnotationText>
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxDbFileOutput" />
+    </Node>
+    <Node ToolID="34">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1002" y="234" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="True" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Right_Region" selected="True" input="Right_" />
+                <SelectField field="Left_StoreID" selected="True" input="Left_" />
+                <SelectField field="Left_Week Number" selected="True" input="Left_" />
+                <SelectField field="Left_Week Begin Date" selected="True" input="Left_" />
+                <SelectField field="Left_Week End Date" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_Sum_Gross Margin" selected="True" input="Left_" />
+                <SelectField field="Left_Sum_Sum_Sales" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Sq_Ft" selected="False" input="Right_" />
+                <SelectField field="Right_AvgMonthSales" selected="False" input="Right_" />
+                <SelectField field="Right_Right_Name" selected="False" input="Right_" />
+                <SelectField field="Right_Phone Number" selected="False" input="Right_" />
+                <SelectField field="Right_Street Combined" selected="False" input="Right_" />
+                <SelectField field="Right_Street 1" selected="False" input="Right_" />
+                <SelectField field="Right_Street 2" selected="False" input="Right_" />
+                <SelectField field="Right_Street 3" selected="False" input="Right_" />
+                <SelectField field="Right_City" selected="False" input="Right_" />
+                <SelectField field="Right_Coordinates" selected="False" input="Right_" />
+                <SelectField field="Right_State" selected="False" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="False" input="Right_" />
+                <SelectField field="Right_Country" selected="False" input="Right_" />
+                <SelectField field="Right_Latitude" selected="False" input="Right_" />
+                <SelectField field="Right_Longitude" selected="False" input="Right_" />
+                <SelectField field="Right_Timezone" selected="False" input="Right_" />
+                <SelectField field="Right_Current Timezone Offset" selected="False" input="Right_" />
+                <SelectField field="Right_Olson Timezone" selected="False" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="37">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.Join.Join">
+        <Position x="1014" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration joinByRecordPos="False">
+          <JoinInfo connection="Left">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <JoinInfo connection="Right">
+            <Field field="StoreID" />
+          </JoinInfo>
+          <SelectConfiguration>
+            <Configuration outputConnection="Join">
+              <OrderChanged value="False" />
+              <CommaDecimal value="False" />
+              <SelectFields>
+                <SelectField field="Left_Sum_Sum_Gross Margin" selected="True" rename="Weekly Gross Margin" input="Left_" />
+                <SelectField field="Left_Sum_Sum_Sales" selected="True" input="Left_" />
+                <SelectField field="Right_StoreID" selected="False" rename="Right_StoreID" input="Right_" />
+                <SelectField field="Right_Sq_Ft" selected="True" input="Right_" />
+                <SelectField field="Right_AvgMonthSales" selected="True" input="Right_" />
+                <SelectField field="Right_Postal Code" selected="True" input="Right_" />
+                <SelectField field="Right_Latitude" selected="True" input="Right_" />
+                <SelectField field="Right_Longitude" selected="True" input="Right_" />
+                <SelectField field="*Unknown" selected="False" />
+              </SelectFields>
+            </Configuration>
+          </SelectConfiguration>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxJoin" />
+    </Node>
+    <Node ToolID="38">
+      <GuiSettings>
+        <Position x="1086" y="162" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <Value name="do target">True</Value>
+          <Value name="target">Weekly Gross Margin</Value>
+          <Value name="target level" />
+          <Value name="use fields">"Sum_Sum_Sales","Sq_Ft","AvgMonthSales","Postal Code","Latitude","Longitude"</Value>
+          <Value name="Pearson">True</Value>
+          <Value name="Spearman">False</Value>
+          <Value name="Hoeffding">False</Value>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+        <Dependencies>
+          <Implicit />
+        </Dependencies>
+      </Properties>
+      <EngineSettings Macro="Predictive Tools\Association_Analysis.yxmc" />
+    </Node>
+    <Node ToolID="39">
+      <GuiSettings Plugin="AlteryxBasePluginsGui.BrowseV2.BrowseV2">
+        <Position x="1170" y="174" />
+      </GuiSettings>
+      <Properties>
+        <Configuration>
+          <TempFile>C:\Users\gvale\AppData\Local\Temp\Engine_24852_4a715d585db74bb4a2493a544a932876_\Engine_22188_c92048f4d76940458248f6ff9d4d429e_.yxdb</TempFile>
+          <TempFileDataProfiling />
+          <Layout>
+            <ViewMode>Single</ViewMode>
+            <ViewSize value="100" />
+            <View1>
+              <DefaultTab>Report</DefaultTab>
+              <Hints>
+                <Table />
+              </Hints>
+            </View1>
+            <View2 />
+          </Layout>
+        </Configuration>
+        <Annotation DisplayMode="0">
+          <Name />
+          <DefaultAnnotationText />
+          <Left value="False" />
+        </Annotation>
+      </Properties>
+      <EngineSettings EngineDll="AlteryxBasePluginsEngine.dll" EngineDllEntryPoint="AlteryxBrowseV2" />
+    </Node>
+  </Nodes>
+  <Connections>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="2" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="1" Connection="Output" />
+      <Destination ToolID="3" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="3" Connection="Output" />
+      <Destination ToolID="4" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="4" Connection="True" />
+      <Destination ToolID="5" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="6" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="8" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="5" Connection="Output" />
+      <Destination ToolID="9" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="6" Connection="Output" />
+      <Destination ToolID="9" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="9" Connection="Join" />
+      <Destination ToolID="10" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="11" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="12" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="14" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="10" Connection="Output" />
+      <Destination ToolID="18" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="12" Connection="Output" />
+      <Destination ToolID="13" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="15" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="34" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="34" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="14" Connection="Output" />
+      <Destination ToolID="37" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="37" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="18" Connection="Output" />
+      <Destination ToolID="21" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="22" Connection="Output" />
+      <Destination ToolID="21" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="19" Connection="Output" />
+      <Destination ToolID="20" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="20" Connection="Output" />
+      <Destination ToolID="26" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="21" Connection="Left" />
+      <Destination ToolID="23" Connection="Input" />
+    </Connection>
+    <Connection name="#1">
+      <Origin ToolID="21" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection name="#2">
+      <Origin ToolID="31" Connection="Join" />
+      <Destination ToolID="24" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="23" Connection="Output" />
+      <Destination ToolID="31" Connection="Left" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="31" Connection="Right" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="25" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="24" Connection="Output" />
+      <Destination ToolID="32" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="26" Connection="Output" />
+      <Destination ToolID="22" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="27" Connection="Output" />
+      <Destination ToolID="28" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="28" Connection="Output" />
+      <Destination ToolID="29" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="29" Connection="Output" />
+      <Destination ToolID="30" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="34" Connection="Join" />
+      <Destination ToolID="33" Connection="Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="37" Connection="Join" />
+      <Destination ToolID="38" Connection="Data Input" />
+    </Connection>
+    <Connection>
+      <Origin ToolID="38" Connection="Correlation Matrix" />
+      <Destination ToolID="39" Connection="Input" />
+    </Connection>
+  </Connections>
+  <Properties>
+    <Memory default="True" />
+    <GlobalRecordLimit value="0" />
+    <TempFiles default="True" />
+    <Annotation on="True" includeToolName="False" />
+    <ConvErrorLimit value="10" />
+    <ConvErrorLimit_Stop value="False" />
+    <CancelOnError value="False" />
+    <DisableBrowse value="False" />
+    <EnablePerformanceProfiling value="False" />
+    <DisableAllOutput value="False" />
+    <ShowAllMacroMessages value="False" />
+    <ShowConnectionStatusIsOn value="True" />
+    <ShowConnectionStatusOnlyWhenRunning value="True" />
+    <ZoomLevel value="0" />
+    <LayoutType>Horizontal</LayoutType>
+    <MetaInfo>
+      <NameIsFileName value="True" />
+      <Name>ProyectDataTreatment</Name>
+      <Description />
+      <RootToolName />
+      <ToolVersion />
+      <ToolInDb value="False" />
+      <CategoryName />
+      <SearchTags />
+      <Author />
+      <Company />
+      <Copyright />
+      <DescriptionLink actual="" displayed="" />
+      <Example>
+        <Description />
+        <File />
+      </Example>
+    </MetaInfo>
+    <Events>
+      <Enabled value="True" />
+    </Events>
+  </Properties>
+</AlteryxDocument>

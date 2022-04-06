@@ -49,9 +49,23 @@ You are a loan officer at a young and small bank (been in operations for two yea
 #### Skills Required
 In order to complete this project, you must be able to:
 
-Cleanup, format, and blend a wide range of data sources
-Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model
+-Cleanup, format, and blend a wide range of data sources
+-Build predictive classification models using Logistic Regression, Decision Tree, Random Forest, and Boosted Model
 
-- [Data: Predicting Default Risk]()
-- [Project: Predicting Default Risk (Report)]()
+- [Data: Predicting Default Risk](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/tree/main/3%20-%20Classification%20Models/Data)
+- [Project: Predicting Default Risk (Report)](https://github.com/GValenB78/Predictive-Analytics-for-Business-Nanodegree/blob/main/3%20-%20Classification%20Models/P3%20Submission%20Report.pdf)
 
+
+### Part 4: [A/B Testing](https://www.udacity.com/course/ab-testing--ud979)
+
+You're a business analyst for Round Roasters, a coffee restaurant in the United States of America. The executive team conducted a market test with a new menu and needs to figure whether the new menu can drive enough sales to offset the cost of marketing the new menu. Your job is to analyze the A/B test and write up a recommendation to whether the Round Roasters chain should launch this new menu.
+
+#### Skills Required
+
+In order to complete this project, you must be able to:
+
+- Cleanup, format, and blend a wide range of data sources
+- Plan and analyze A/B tests
+
+- [Data: A/B Test a New Menu Launch]()
+- [Project: A/B Test a New Menu Launch (Report)]()
